@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Input-Validation</title>
+</head>
+<body>
+<div class="backdrop"></div>
+<div class="modal">
+    
+    <h2>خوش آمدید :)</h2>
+    <h2 class="modaltitle"></h2>
+     <button class="okBtn">باشه!</button>
+</div>
+
+
+   <div class="mainContainer">
+    <div class="divpicture"> 
+        <img src="vector.png" alt="No Intetnet!">
+    </div>
+    <div class="divform">
+       
+            <div class="divWrapper">
+                <label >شماره تلفن</label>
+                <input type="text"
+                name="phone-number"
+                id="phone-number"
+                required
+                autocomplete="off"
+                pattern="09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}"
+                
+                />
+                <label >نام کاربری</label>
+                <input type="text" class="username">
+                <small hidden> لطفا شماره تلفن را بدرستی وارد کنید</small>
+            </div>
+            
+            
+
+           
+        <div class="buttons">
+        <button class="sabtBtn">ثبت</button>
+        <!-- <button id="enter-btn">ورود</button> -->
+        
+        </div>
+    </div>
+   </div>
+
+
+
+
+
+
+
+   <script src="app.js"></script>
+</body>
+
+</html>

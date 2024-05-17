@@ -1,0 +1,140 @@
+@font-face{
+    font-family: "vazirmatn";
+    src: url(./fonts/Vazirmatn-FD-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "vazirmatn",sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    min-height: 100vh;
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 140px;
+    
+
+    
+}
+.mainContainer{
+background-color: #fff;
+border-radius: 5px;
+padding: 15px 10px ;
+display: flex;
+flex-direction: column;
+gap: 10px;
+box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+
+
+
+}
+.divpicture{
+    display: flex;
+    justify-content: center;
+    /* display: inline; */
+}
+ 
+.divform{
+   
+    width: 250px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+
+
+}
+
+.divWrapper{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 7px;
+}
+img{
+   
+    width: 250px;
+    height: 230px;
+    object-fit: cover;
+}
+label{
+    color: #333333;
+    font-weight: bold;
+}
+input{
+    height: 32px;
+    border: none;
+    outline: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 8px;
+    color: #333333;
+    
+}
+
+input:focus{
+    background-color: #f2f0f0;
+}
+input:hover{
+    background-color: #f2f0f0;
+}
+input.error{
+    border: 1px solid #d63d3d;
+}
+small{
+    color: #d63d3d;
+    font-size: 12px;
+
+}
+button{
+    color: #fff;
+    background-color: #f9bd15;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 4px 0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+
+}
+button:hover{
+    background-color: #dfaf2a;
+}
+.backdrop{
+    background-color: rgb(230, 27, 9);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+}
+.modal{
+ 
+    z-index: 10;
+    visibility: hidden;
+    top:0;
+    left: 50%;
+    transform: translateY(-100vh);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px 10px ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    height: 100px;
+    transition: all 0.1s;
+    opacity: 0;
+
+}
+
